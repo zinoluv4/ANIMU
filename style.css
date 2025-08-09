@@ -111,3 +111,106 @@ body{
   .hero h1{font-size:36px}
   .container{padding:0 18px}
 }
+/* Extra mobile-friendly tweaks */
+@media (max-width:768px) {
+  /* Navigation */
+  .nav { 
+    display: none; 
+  }
+  
+  /* Center hero text for mobile */
+  .hero-inner { 
+    flex-direction: column; 
+    text-align: center; 
+    gap: 24px; 
+  }
+  .hero-content { 
+    max-width: 100%; 
+  }
+  .hero h1 { 
+    font-size: 32px; 
+  }
+  .tagline { 
+    font-size: 16px; 
+  }
+  .btn { 
+    padding: 10px 16px; 
+    font-size: 14px; 
+  }
+
+  /* About section */
+  .about { 
+    grid-template-columns: 1fr; 
+    text-align: center; 
+  }
+  .about-image img { 
+    max-width: 90%; 
+    margin: 0 auto; 
+  }
+
+  /* Product grid */
+  .product-grid { 
+    grid-template-columns: 1fr; 
+  }
+  .product-card img { 
+    height: auto; 
+  }
+  .card-body h3 { 
+    font-size: 16px; 
+  }
+
+  /* Moodboard */
+  .moodboard { 
+    flex-direction: column; 
+  }
+  .moodboard img { 
+    width: 100%; 
+    height: auto; 
+  }
+
+  /* Contact section */
+  .contact-inner { 
+    flex-direction: column; 
+    text-align: center; 
+  }
+  .signup { 
+    flex-direction: column; 
+    width: 100%; 
+  }
+  .signup input { 
+    min-width: 100%; 
+    font-size: 14px; 
+  }
+  .signup button { 
+    width: 100%; 
+    font-size: 14px; 
+  }
+
+  /* Footer */
+  .footer-inner { 
+    flex-direction: column; 
+    gap: 12px; 
+    text-align: center; 
+  }
+  .footer-nav { 
+    display: flex; 
+    gap: 12px; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+  }
+}
+
+/* Tiny devices (phones < 480px) */
+@media (max-width:480px) {
+  .hero h1 { 
+    font-size: 26px; 
+  }
+  .tagline { 
+    font-size: 14px; 
+  }
+  .btn { 
+    padding: 8px 14px; 
+    font-size: 13px; 
+  }
+}
+/* 
