@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ANIMU ESSENCE — Fragrances</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">
+        <img src="images/ANIMU LOGO 3.png" alt="ANIMU ESSENCE logo" class="logo fade-in">
+      </a>
+      <nav class="nav fade-in">
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#story">Story</a>
+        <a href="#contact" class="cta">Shop</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" style="background-image: url('https://source.unsplash.com/1600x900/?perfume,fragrance,still-life');">
+      <div class="hero-overlay"></div>
+      <div class="container hero-inner">
+        <div class="hero-content slide-up">
+          <h1>ANIMU ESSENCE</h1>
+          <p class="tagline">A unisex fragrance collection inspired by earth, ritual and modern myth.</p>
+          <a href="#products" class="btn btn-primary">Explore the Collection</a>
+        </div>
+
+        <figure class="hero-bottle fade-in">
+          <img src="images/ANIMU-MOCKUP-2.jpg" alt="ANIMU perfume bottle">
+        </figure>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section container about">
+      <div class="about-text slide-up">
+        <h2>Pure. Ritual. Presence.</h2>
+        <p>ANIMU ESSENCE blends ancient botanical knowledge with contemporary minimalism. Each scent is crafted to evoke landscapes and stories — refined, natural and intentionally unisex.</p>
+        <ul class="brand-values">
+          <li>Authentic botanical extracts</li>
+          <li>Minimal premium packaging</li>
+          <li>Sustainable sourcing</li>
+        </ul>
+      </div>
+      <div class="about-image fade-in">
+        <img src="images/ANIMU-POSTER-1.jpg" alt="Botanical inspiration">
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section id="products" class="section products container">
+      <h2 class="slide-up">Signature Collection</h2>
+      <p class="lead fade-in">A curated selection of three signature fragrances.</p>
+
+      <div class="product-grid">
+        <article class="product-card zoom-in">
+          <img src="images/ANIMU-MOCKUP-2.jpg" alt="Perfume - Earth">
+          <div class="card-body">
+            <h3>Root & Bloom</h3>
+            <p class="price">100ml • R 840</p>
+            <a class="btn btn-outline" href="#contact">Buy</a>
+          </div>
+        </article>
+
+        <article class="product-card zoom-in">
+          <img src="images/ANIMU-MOCKUP-1.jpg" alt="Perfume - Citrus">
+          <div class="card-body">
+            <h3>Stone & Citrus</h3>
+            <p class="price">100ml • R 840</p>
+            <a class="btn btn-outline" href="#contact">Buy</a>
+          </div>
+        </article>
+
+        <article class="product-card zoom-in">
+          <img src="images/ANIMU-MOCKUP-5.jpg" alt="Perfume - Woods">
+          <div class="card-body">
+            <h3>Nightwood</h3>
+            <p class="price">100ml • R 900</p>
+            <a class="btn btn-outline" href="#contact">Buy</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- STORY -->
+    <section id="story" class="section story">
+      <div class="container">
+        <h2 class="slide-up">The Story</h2>
+        <p class="lead fade-in">ANIMU is a ritual for the modern wanderer — drawing from Pachamama-inspired reverence for the land. The brand balances earthy depth with bright, modern accents.</p>
+
+        <div class="moodboard">
+          <img class="zoom-in" src="images/ANIMU-MOCKUP-7.jpg" alt="landscape">
+          <img class="zoom-in" src="images/Untitled-5.png" alt="pattern">
+          <img class="zoom-in" src="images/ANIMU-MOCKUP-8.jpg" alt="artisan">
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact container">
+      <div class="contact-inner slide-up">
+        <div>
+          <h2>Stay in the loop</h2>
+          <p>Sign up to get first access to drops and limited editions.</p>
+        </div>
+        <form class="signup" action="#" method="post" onsubmit="alert('Thanks — this demo form does not send'); return false;">
+          <input type="email" name="email" placeholder="Your email" required>
+          <button class="btn btn-primary" type="submit">Join</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <img src="images/ANIMU-LOGO-4 crop.png" alt="ANIMU logo white" class="logo footer-logo">
+      <nav class="footer-nav">
+        <a href="#">Privacy</a>
+        <a href="#">Shipping</a>
+        <a href="#">Terms</a>
+      </nav>
+      <p class="copyright">© <span id="year"></span> ANIMU ESSENCE</p>
+    </div>
+  </footer>
+
+  <script>
+    // Auto year update
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Scroll reveal animation
+    const revealElements = document.querySelectorAll('.slide-up, .fade-in, .zoom-in');
+    const revealOnScroll = () => {
+      let triggerBottom = window.innerHeight * 0.85;
+      revealElements.forEach(el => {
+        let rect = el.getBoundingClientRect().top;
+        if(rect < triggerBottom){
+          el.classList.add('show');
+        }
+      });
+    };
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('load', revealOnScroll);
+  </script>
+</body>
+</html>
