@@ -7,10 +7,10 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- HEADER -->
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="#">
@@ -19,6 +19,7 @@
       <nav class="nav fade-in">
         <a href="#about">About</a>
         <a href="#products">Products</a>
+        <a href="#custom-scent">Custom Scent</a>
         <a href="#story">Story</a>
         <a href="#contact" class="cta">Shop</a>
       </nav>
@@ -35,7 +36,6 @@
           <p class="tagline">A unisex fragrance collection inspired by earth, ritual and modern myth.</p>
           <a href="#products" class="btn btn-primary">Explore the Collection</a>
         </div>
-
         <figure class="hero-bottle fade-in">
           <img src="images/ANIMU-MOCKUP-2.jpg" alt="ANIMU perfume bottle">
         </figure>
@@ -62,7 +62,6 @@
     <section id="products" class="section products container">
       <h2 class="slide-up">Signature Collection</h2>
       <p class="lead fade-in">A curated selection of three signature fragrances.</p>
-
       <div class="product-grid">
         <article class="product-card zoom-in">
           <img src="images/ANIMU-MOCKUP-2.jpg" alt="Perfume - Earth">
@@ -72,7 +71,6 @@
             <a class="btn btn-outline" href="#contact">Buy</a>
           </div>
         </article>
-
         <article class="product-card zoom-in">
           <img src="images/ANIMU-MOCKUP-1.jpg" alt="Perfume - Citrus">
           <div class="card-body">
@@ -81,7 +79,6 @@
             <a class="btn btn-outline" href="#contact">Buy</a>
           </div>
         </article>
-
         <article class="product-card zoom-in">
           <img src="images/ANIMU-MOCKUP-5.jpg" alt="Perfume - Woods">
           <div class="card-body">
@@ -93,12 +90,54 @@
       </div>
     </section>
 
+    <!-- CUSTOM SCENT BUILDER -->
+    <section id="custom-scent" class="section container custom-scent">
+      <h2 class="slide-up">Create Your Custom Scent</h2>
+      <p class="lead fade-in">Design a fragrance as unique as you are. Choose your base notes, heart notes, and top notes to create your own ANIMU Essence blend.</p>
+      <form class="custom-scent-form slide-up" onsubmit="alert('Your custom scent request has been submitted!'); return false;">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" placeholder="Full Name" required>
+        </div>
+        <div class="form-group">
+          <label for="base-note">Base Note</label>
+          <select id="base-note" required>
+            <option value="">Select a base note</option>
+            <option>Vanilla</option>
+            <option>Sandalwood</option>
+            <option>Amber</option>
+            <option>Patchouli</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="heart-note">Heart Note</label>
+          <select id="heart-note" required>
+            <option value="">Select a heart note</option>
+            <option>Rose</option>
+            <option>Lavender</option>
+            <option>Jasmine</option>
+            <option>Cinnamon</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="top-note">Top Note</label>
+          <select id="top-note" required>
+            <option value="">Select a top note</option>
+            <option>Bergamot</option>
+            <option>Lemon</option>
+            <option>Grapefruit</option>
+            <option>Mint</option>
+          </select>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit My Blend</button>
+      </form>
+    </section>
+
     <!-- STORY -->
     <section id="story" class="section story">
       <div class="container">
         <h2 class="slide-up">The Story</h2>
         <p class="lead fade-in">ANIMU is a ritual for the modern wanderer — drawing from Pachamama-inspired reverence for the land. The brand balances earthy depth with bright, modern accents.</p>
-
         <div class="moodboard">
           <img class="zoom-in" src="images/ANIMU-MOCKUP-7.jpg" alt="landscape">
           <img class="zoom-in" src="images/Untitled-5.png" alt="pattern">
@@ -122,6 +161,7 @@
     </section>
   </main>
 
+  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container footer-inner">
       <img src="images/ANIMU-LOGO-4 crop.png" alt="ANIMU logo white" class="logo footer-logo">
