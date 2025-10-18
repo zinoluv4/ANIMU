@@ -37,7 +37,7 @@
           <a href="#products" class="btn btn-primary">Explore the Collection</a>
         </div>
         <figure class="hero-bottle fade-in">
-          <img src="images/ANIMU-MOCKUP-2.jpg" alt="ANIMU perfume bottle">
+          <img src="images/ANIMU TOP.png" alt="ANIMU perfume bottle">
         </figure>
       </div>
     </section>
@@ -54,7 +54,7 @@
         </ul>
       </div>
       <div class="about-image fade-in">
-        <img src="images/ANIMU-POSTER-1.jpg" alt="Botanical inspiration">
+        <img src="images/ANIMU 5.png" alt="Botanical inspiration">
       </div>
     </section>
 
@@ -64,7 +64,7 @@
       <p class="lead fade-in">A curated selection of three signature fragrances.</p>
       <div class="product-grid">
         <article class="product-card zoom-in">
-          <img src="images/ANIMU-MOCKUP-2.jpg" alt="Perfume - Earth">
+          <img src="images/ANIMU AD1.png" alt="Perfume - Earth">
           <div class="card-body">
             <h3>Root & Bloom</h3>
             <p class="price">100ml • R 840</p>
@@ -72,7 +72,7 @@
           </div>
         </article>
         <article class="product-card zoom-in">
-          <img src="images/ANIMU-MOCKUP-1.jpg" alt="Perfume - Citrus">
+          <img src="images/ANIMU AD2.png" alt="Perfume - Citrus">
           <div class="card-body">
             <h3>Stone & Citrus</h3>
             <p class="price">100ml • R 840</p>
@@ -80,7 +80,7 @@
           </div>
         </article>
         <article class="product-card zoom-in">
-          <img src="images/ANIMU-MOCKUP-5.jpg" alt="Perfume - Woods">
+          <img src="images/ANIMU AD3.png" alt="Perfume - Woods">
           <div class="card-body">
             <h3>Nightwood</h3>
             <p class="price">100ml • R 900</p>
@@ -139,9 +139,9 @@
         <h2 class="slide-up">The Story</h2>
         <p class="lead fade-in">ANIMU is a ritual for the modern wanderer — drawing from Pachamama-inspired reverence for the land. The brand balances earthy depth with bright, modern accents.</p>
         <div class="moodboard">
-          <img class="zoom-in" src="images/ANIMU-MOCKUP-7.jpg" alt="landscape">
-          <img class="zoom-in" src="images/Untitled-5.png" alt="pattern">
-          <img class="zoom-in" src="images/ANIMU-MOCKUP-8.jpg" alt="artisan">
+          <img class="zoom-in" src="images/CONTAINER 102.png" alt="landscape">
+          <img class="zoom-in" src="images/CONTAINER 103.png" alt="pattern">
+          <img class="zoom-in" src="images/KONTAINER 05.png" alt="artisan">
         </div>
       </div>
     </section>
@@ -173,6 +173,21 @@
       <p class="copyright">© <span id="year"></span> ANIMU ESSENCE</p>
     </div>
   </footer>
+
+<!-- 3D BOTTLE VIEWER -->
+<section class="section bottle-viewer-section">
+  <div class="container">
+    <h2 class="slide-up">The Essence in Motion</h2>
+    <p class="lead fade-in">Explore the ANIMU bottle in 3D — rotate, zoom, and experience the craftsmanship up close.</p>
+    <div id="bottle-container"></div>
+  </div>
+</section>
+
+<!-- Load Three.js and GLTFLoader -->
+<script src="Three.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.157.0/examples/js/loaders/GLTFLoader.js"></script>
+<script src="Three.js"></script>
+<div id="bottle-container" style="width:100%; height:500px;"></div>
 
   <script>
     // Auto year update
